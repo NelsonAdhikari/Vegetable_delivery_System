@@ -56,8 +56,9 @@ if(isset($_GET["action"]))
 <!DOCTYPE html>
 <html>
 	<head>
+	<link rel="stylesheet" href="./css/viewcart.css">
 		<title> PHP and MySql | Vegetable Delivery System</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
 		
 	</head>
 	<body>
@@ -80,8 +81,10 @@ if(isset($_GET["action"]))
 				<form method="post" enctype="multipart/form-data" action="viewcart.php?action=add&id=<?php echo $row["id"]; ?>">
 					<div style="border:3px solid #5cb85c; background-color:whitesmoke; border-radius:5px; padding:16px;" align="center">
 						
-						<img src="images/<?php echo $row["image"]; ?>" class="img-responsive" /><br />
-
+						<img src="../image/<?php echo $row["image"]; ?>" class="img-responsive" /><br />
+						<?php
+						echo $row["image"];
+						?>
 						<h4 class="text-info"><?php echo $row["name"]; ?></h4>
 
 						<h4 class="text-danger">$ <?php echo $row["price"]; ?></h4>

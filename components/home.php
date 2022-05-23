@@ -23,7 +23,7 @@ if (isset($_GET['logout'])) {
     <div class="content">
         <h3>fresh and <span>organic</span> products for you</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
-        <a href="./categories.php" class="btn">shop now</a>
+        <a href="#" class="btn">shop now</a>
     </div>
 
 </section>
@@ -71,7 +71,7 @@ if (isset($_GET['logout'])) {
             <h3>Fruits</h3>
             <!-- <h3><?php echo $row['name']; ?></h3> -->
             <p>upto 45% off</p>
-            <a href="./products.php#fruits" class="btn">shop now</a>
+            <a href="./viewcart.php?" class="btn">shop now</a>
         </div>
         <div class="box">
             <img src="../image/cat-4.png" alt="">
